@@ -1,0 +1,35 @@
+run: 
+ask which game to perform operations on
+(check to see if first number changed in json file?)
+
+code:
+instantiate class list creator
+- creates (empty dict-do this in histogram?)  and list, recieves file choice, starts count at 0
+- choose either 5 result or single result
+ - function for each
+  - open chosen file, creates and returns master list and count number of results
+  
+  run:
+  master list and count recieved, choose dicts to create or have a set of them automatically created
+  
+  full list count
+  
+  code:
+  instantiate class dict counter
+  init : empty dict
+  function histogram-get recieves list
+  returns dictionary with counts
+  
+  name of file - create master list - create new list from master based on slice - feed new list through histogram to get dictionary of counts - present data from dictionary or manipulate output (create tuples, reverse key value,etc) then present
+
+3 files:
+
+user input
+actions to produce output
+   combine the two above??
+list/dict creator
+
+ask for game - check to see if file for lists - if yes then move on - if no ask to overwrite
+                                          (2nd gen)    then check check first numbers match
+                                                       if yes then move on
+                                                       if no overwrite

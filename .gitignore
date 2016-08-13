@@ -1,0 +1,6 @@
+#ignore backups from gedit
+*.*~
+
+#ignore pyc
+*.pyc
+

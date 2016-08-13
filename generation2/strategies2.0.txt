@@ -1,0 +1,50 @@
+Reassess project around idea/realization that all data manipulation revolves around one main object:
+The list of lists of results (for 5 nums)
+Secondary (generated from this):
+- the total number of lists/results 
+- The dict of result counts
+     - A list of tuples
+     - percentages of result numbers
+ - Top half, bottom, etc
+
+Separate classes for five and single?  New instance has to be called anyway to prevent mixing of lists
+
+using the master list there is not need to keep reopening the file and iterating through the parts that I want to build a specific counter dict (like the last 50 results) - now I build a master list from the file and then iterate through that using indexing and the total count generated from building the list.  That makes it so much easier to access middle parts of the list.
+
+I could save the master list to a json file.  the script would check the first numbers and if they match the file than a new list would not have to be generated, saving time.
+
+use reverse dict from think python to make a dict of counts as key and list of results as values
+from think python:
+Here is a function that inverts a dictionary:
+
+def invert_dict(d):
+    inverse = dict()
+    for key in d:
+        val = d[key]
+        if val not in inverse:
+            inverse[val] = [key]
+        else:
+            inverse[val].append(key)
+    return inverse
+
+I.
+main output to start - columns of last 10 result lists and percentage of frequency and number of hits overall
+
+so a key value for each output?
+
+1. {1result:percent,2result:percent...,5result:percent}{1:percent}
+2. ....
+10. 
+
+or
+
+1. {1result:[percent,counts - overall, 100, 50, 10],2result:[...]
+
+START WITH {1result:[percent,overall count],...}
+
+II.
+calculate the mean, median, etc whatever of each result for the last 100 or whatever numbers.
+
+do the same for the percentages then find which numbers fall in that percentage
+
+
